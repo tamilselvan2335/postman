@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "0c668ff6-e12d-4746-b8bd-bac24d61d653",
+		"name": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\\",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Defects Creation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{bearer_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"compressing Sports Investmvvvvent\",\r\n    \"description\": \"Towels\",\r\n    \"author\": \"York Hudddman\",\r\n    \"last_Updated\": \"2023-02-07T16:05:33Z\",\r\n    \"jira_Defect_id\": 51596,\r\n    \"jira_Project_Id\": 14622,\r\n    \"defectsStatus\": \"INPROGRESS\",\r\n   \"taskExecution\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://172.16.24.21:9081/api/defects",
+					"protocol": "http",
+					"host": [
+						"172",
+						"16",
+						"24",
+						"21"
+					],
+					"port": "9081",
+					"path": [
+						"api",
+						"defects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Defects Creation Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{bearer_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://172.16.24.21:9081/api/defects/1",
+					"protocol": "http",
+					"host": [
+						"172",
+						"16",
+						"24",
+						"21"
+					],
+					"port": "9081",
+					"path": [
+						"api",
+						"defects",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
